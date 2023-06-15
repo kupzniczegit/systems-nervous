@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<body bgcolor="#C8f4el">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+	<Center>
+        <h1>Some fun things I have learnt on the way</h1>  
+    </main>
+	
+		<FONT COLOR="BLACK">
+		<main> 
+		<p>I am sadly aware my webpage isn't aesthetically pleasing,
+		however thet doesn't mean I haven't learnt anything on the way. I chose a topic 
+		that intrests me and sadly it is a bit too late to change my choice.
+		Although I have already used html once,
+		I feel way more confident in using it than I was still a few years ago. 
+		The elements on this specific page are functions I wasn't able to implement 
+		but have certainly broadened my horizon when it comes to html. I
+		really enjoyed working with this programming language and I hope I'll be able to
+		implement it somewhere in the future.<p>
+	<b>
+	<main>
+		<body>
+		 <table border="1">
+			<tr>
+			  <td rowspan="2"><p>ggg<p></td>
+			  <td colspan="2">aaa</td>
+			</tr>
+			<tr>
+			  <td>bbb</td>
+			  <td>ccc</td>
+			</tr>
+			<tr>
+			  <td>ddd<td>
+			  <td rowspan="2" colspan="2">eee</td>
+			</tr>
+			<tr>
+			  <td>fff<td>
+			</tr>
+		  </table>
+		</body>
+		<b>
+	<main>
+	<p id="myText">When the button at the bottom gets clicked,</p>
+
+<button onclick="changeText()">this button</button>
+
+<script>
+function changeText() {
+  document.getElementById("myText").innerHTML = "the text will change";
+}
+</script>
+<div style="margin: 20px;"></div>
+<main>
+<button onclick="showAlert()">When this button gets clicked,</button>
+<script>
+function showAlert() {
+  alert("It will show an alert, boo");
+}
+</script>
+<div style="margin: 20px;"></div>
+<p>when a name is written into the text space,<p>
+<form onsubmit="submitForm(event)">
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button type="submit">Submit</button>
+</form>
+<script>
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  var name = document.getElementById("nameInput").value;
+  alert("It will reappear in an alert. hello " + name + "!");
+}
+</script>
+<head>
+    <title>Sum Calculator</title>
+    <script>
+        function calculateSum() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML = "Sum: " + sum;
+        }
+    </script>
+</head>
+<body>
+    <p>This is a sum calculator<p>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="calculateSum()">Calculate</button>
+    <p id="result"></p>
+</body>
+</html>
+
+<p><b><i>I learnt how to write sentences that are not only bolded out, but are in italics.<i><b><p>
